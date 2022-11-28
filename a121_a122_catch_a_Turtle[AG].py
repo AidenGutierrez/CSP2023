@@ -21,9 +21,6 @@ counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 
 #-----initialize turtle-----
-# leaderboard variables
-leaderboard_file_name = "a122_leaderboard.txt"
-player_name = input ("Please enter your name:")
 
 counter =  trtl.Turtle()
 counter.penup()
