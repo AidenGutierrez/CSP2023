@@ -23,6 +23,7 @@ def get_names(file_name):
       index = index + 1
     # TODO 2: add the player name to the names list
     names.append(leader_name)
+    print(names)
   leaderboard_file.close()
 
   #  TODO 6: return the names list in place of the empty list
@@ -46,9 +47,10 @@ def get_scores(file_name):
     while (line[index]!= '\n'):
         leader_score = leader_score + line[index]
         index = index + 1
+
     # TODO 5: add the player score to the scores list
     print(leader_score)
-    scores.append(leader_score)
+    scores.append(int(leader_score))
   leaderboard_file.close()
 
   # TODO 7: return the scores in place of the empty list
@@ -60,14 +62,14 @@ def update_leaderboard(file_name, leader_names, leader_scores,  player_name, pla
 
   index = 0
   # TODO 8: loop through all the scores in the existing leaderboard list
-  '''
-  for   :
+  
+  for index in range(len(leader_scores)):
     # TODO 9: check if this is the position to insert new score at
     if ():
       break
     else:
       index = index + 1
-  '''
+
   
   # TODO 10: insert new player and score
 
